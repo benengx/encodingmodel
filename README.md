@@ -13,6 +13,11 @@ This package preprocesses joint behavioral and neuronal data and then processes 
 Function list:
 make_predictor_matrix_generalcase.m
 process_encoding_model.m
+find_non_empty_cells.m
+get_CV_R2.m
+
+Data files list:
+spline_basis30_int.mat
 
 Instructions:
 First, the data has to be formatted to be used in the make_predictor_matrix_generalcase function. See the function header for specific details. After the predictor matrix is generated, it can be directly processed with the process_encoding_model function. In order to obtain a measure of significance for the relationship between behavioral variables and the neural activity, the obtained F-statistic for each behavioral variable should then be compared to a distribution of F-statistics obtained from a (reasonably large) number of shuffled data instantiations (i.e. the neural activity shuffled but with the same matrix of predictors). 
